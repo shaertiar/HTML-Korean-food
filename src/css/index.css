@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Montserrat+Alternates:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    background: #1d2a1d;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #090a09;
+}
+
+body::after {
+    background: #f00;
+}
+
+body {
+    background: linear-gradient(90deg, #090a09, #1d2a1d);
+    color: #fff;
+    /* font-family: 'Comfortaa', cursive; */
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 1000;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    padding: 15px;
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+    font-size: 36px;
+    text-shadow: rgba(255, 255, 255, .25) 5px 5px;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 80px;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav .navigation-order {
+    padding: 10px;
+    background: rgba(255, 255, 255, .1);
+    color: #fff;
+    font-size: 26px;
+    border: 1px solid #0c0;
+    border-radius: 25px;
+    transition: .5s;
+}
+
+header nav .navigation-order:active {
+    border: 1px solid #0f0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin: 80px;
+    margin-left: 10%;
+    padding: 15px;
+    width: 80%;
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.description {
+    font-size: 30px;
+}
+
+.description, .food_list, .order {
+    margin: 10px;
+    margin-bottom: 45px;
+    padding: 15px;
+    background: #090a09;
+    border-radius: 15px;
+}
+
+.description h2 {
+    text-align: center;
+}
+
+.description p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.food_list {
+    font-size: 40px;
+}
+
+.food_list table {
+    width: 100%;
+}
+
+.food_list table caption {
+    margin: 15px;
+}
+
+.food_list table td, .food_list table th {
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.food_list table .food {
+    width: 20%;
+}
+
+.food_list table img {
+    transition: .5s;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.food_list table img:hover {
+    scale: 1.1;
+}
+
+.food_list .food, .food_list .food_cost {
+    text-align: center;
+}
+
+.order h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.order h3 {
+    font-size: 30px;
+    text-align: center;
+    margin: 5px;
+}
+
+.order input {
+    margin: 1%;
+    margin-bottom: 30px;
+    padding: 15px;
+    width: 98%;
+    height: 45px;
+    background: #010101;
+    color: #d0d0d0;
+    font-size: 20px;
+    transition: .5s;
+    border-radius: 5px;
+    border: 1px dashed #639F00;
+}
+
+.order input:hover {
+    width: 90%;
+    color: #fff;
+    border: 1px dashed #0f0;
+}
+
+.order input:placeholder-shown {
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.order button {
+    position: relative;
+    margin: 15px;
+    margin-left: 40%;
+    bottom: 0;
+    width: 20%;
+    height: 50px;
+    background: #fff;
+    font-size: 25px;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+.order button:hover {
+    background: #fff;
+    bottom: 10px;
+    box-shadow: 0px 10px 25px rgba(255, 255, 255, .5);
+}
+
+.order button:active {
+    background: #0f0;
+}
+
+footer {
+    padding: 15px;
+    background: rgba(0, 0, 0, .5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    font-weight: 200;
+    text-align: center;
+    font-size: 20px;
+}
+
+footer .logo {
+    font-size: 30px;
+}
+
+footer p {
+    margin: 10px;
+}
